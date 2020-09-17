@@ -1,0 +1,19 @@
+enum CatgoryType {
+    ScriptingSupport,
+    CodeReview,
+    CoolCreations,
+    BuildingSupport,
+    ArtDesignSupport,
+    GameDesignSupport,
+    DeveloperHub,
+    XboxBugs,
+    XboxFeatures,
+    MobileFeatures,
+    MobileBugs,
+    EngineBugs,
+    EngineFeatures,
+    WebsiteBugs,
+    WebsiteFeatures,
+    StudioBugs,
+    StudioFeatures
+}
