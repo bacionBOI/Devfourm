@@ -1,8 +1,12 @@
-const DeleteThread = require("./DeleteThread")
+const DeleteThread = require("./Admin/DeleteThread")
 const loginWithCookie = require("./loginWithCookie")
-const RemoveUser = require("./RemoveUser")
-const GetUserInfo = require("./GetUserInfo")
-const GetUserGroups = require("./GetUserGroups")
+const RemoveUser = require("./Admin/RemoveUser")
+const GetUserInfo = require("./User/GetUserInfo")
+const GetUserGroups = require("./User/GetUserGroups")
+const GetUserBadges = require("./User/GetUserBadges")
+const UpdateCatory = require("./Admin/UpdateCatory")
+const UpdateThread = require("./Admin/UpdateThread")
+const { threadId } = require("worker_threads")
 
 class Client {
     constructor(){
@@ -26,8 +30,20 @@ class Client {
     RemoveUser(options){
         return RemoveUser(options)
     }
+    UpdateCatory(opt){
+        return UpdateCatory(opt)
+    }
+    GetUserBadges(username){
+        return GetUserBadges(username).then(function(res){
+            return res
+        })
+    }
+    UpdateCatory(catID){
+        return UpdateCatory(catID)
+    }
+    UpdateThread(tID){
+        return UpdateThread(threadId)
+    }
 }
-
-
 
 module.exports = Client
