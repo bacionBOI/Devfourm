@@ -6,7 +6,6 @@ const GetUserGroups = require("./User/GetUserGroups")
 const GetUserBadges = require("./User/GetUserBadges")
 const UpdateCatory = require("./Admin/UpdateCatory")
 const UpdateThread = require("./Admin/UpdateThread")
-const { threadId } = require("worker_threads")
 
 class Client {
     constructor(){
@@ -42,7 +41,7 @@ class Client {
         return UpdateCatory(catID)
     }
     UpdateThread(tID){
-        return UpdateThread(threadId)
+        return UpdateThread(tID)
     }
 }
 
