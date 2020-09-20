@@ -1,0 +1,4 @@
+enum FlagType {
+    Old,
+    Active
+}
