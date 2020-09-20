@@ -1,4 +1,0 @@
-enum FlagType {
-    Old,
-    Active
-}
