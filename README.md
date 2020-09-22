@@ -29,10 +29,11 @@ npm update devfourm
 Nothing
 ```
 ## Functions
-```Nothing
+```
+Nothing
 ```
 ## Other Information
-Added a postinstall and putted the events for the libary in development
+Added a postinstall and the events for the libary in development
 ## Update
 ```
 npm update devfourm
